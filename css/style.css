@@ -39,23 +39,9 @@ body {
 }
 
 /* =====================================
-   ✅ HERO SECTION (Single Background Image- HOME PAGE)
+   ✅ HERO SECTION (Single Background Image-HOME PAGE)
 ===================================== */
 .hero-image {
-  height: 60vh;
-
-  /* ✅ ONE BACKGROUND IMAGE */
-  background-image: url("../image/hero9.jpg");
-
-  background-size: cover; /* Fill are nicely */
-  background-position: center; /* Center image */
-  background-repeat: no-repeat;
-
-  position: relative;
-}
-/*for home page hero  */
-
-.hero-image-index {
   height: 60vh;
 
   /* ✅ ONE BACKGROUND IMAGE */
@@ -67,6 +53,7 @@ body {
 
   position: relative;
 }
+/*for home page hero  */
 
 /* Dark overlay for readability */
 .hero-overlay {
