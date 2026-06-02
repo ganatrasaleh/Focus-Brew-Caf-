@@ -1,0 +1,318 @@
+/* =====================================
+   ✅ GENERAL SETTINGS (Base Style)
+===================================== */
+body {
+  font-family: Arial, sans-serif; /* Font NAME */
+  margin: 0;
+  background-color: #f5f5f5;
+}
+
+/* =====================================
+   ✅ NAVBAR / HEADER
+===================================== */
+
+/* Override Bootstrap navbar color */
+.navbar {
+  background-color: #1c1917 !important; /* Café brown theme */
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Logo */
+.logo-image {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%; /* Circle logo */
+  object-fit: cover;
+  border: 2px solid #9fa0a0;
+  margin: 0 10px;
+}
+
+/* Brand text */
+.navbar-brand {
+  font-weight: bold;
+}
+
+/* Active link highlight */
+.nav-link.active {
+  color: #ffc107 !important;
+  font-weight: bold;
+}
+
+/* =====================================
+   ✅ HERO SECTION (Single Background Image- HOME PAGE)
+===================================== */
+.hero-image {
+  height: 60vh;
+
+  /* ✅ ONE BACKGROUND IMAGE */
+  background-image: url("/image/hero9.jpg");
+
+  background-size: cover; /* Fill are nicely */
+  background-position: center; /* Center image */
+  background-repeat: no-repeat;
+
+  position: relative;
+}
+
+/* Dark overlay for readability */
+.hero-overlay {
+  background: none;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  text-align: center;
+  padding-bottom: 90px;
+  font-weight: bolder;
+}
+
+/* Text inside hero */
+.hero-text {
+  color: black;
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+}
+
+.hero-text p {
+  font-size: 1.5rem;
+}
+
+/* Button styling */
+.hero-text .btn {
+  padding: 12px 25px;
+  border-radius: 30px;
+  transition: 0.3s;
+}
+
+/* Button hover effect */
+.hero-text .btn:hover {
+  background-color: #ffc107;
+  color: black;
+  transform: scale(1.05);
+}
+
+/* =====================================
+   ✅ MENU SECTION - MENU PAGE
+===================================== */
+
+/* Menu card container */
+.menu-card {
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+/* Hover effect */
+.menu-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
+}
+
+/* Menu image */
+.menu-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+/* Image zoom effect */
+.menu-card:hover img {
+  transform: scale(1.1);
+}
+
+/* Content area */
+.menu-card-body {
+  padding: 15px;
+}
+
+/* Title */
+.menu-card-body h4 {
+  color: #5a3e2b;
+  margin-bottom: 10px;
+}
+
+/* List */
+.menu-card-body ul {
+  list-style: none;
+  padding: 0;
+}
+
+/* Menu items */
+.menu-card-body li {
+  display: flex;
+  justify-content: space-between;
+  padding: 6px 0;
+  border-bottom: 1px solid #eee;
+  transition: 0.2s;
+}
+
+/* Price */
+.menu-card-body span {
+  font-weight: bold;
+}
+
+/* Hover effect */
+.menu-card-body li:hover {
+  color: #5a3e2b;
+}
+
+/* =====================================
+   ✅ CONTACT PAGE
+===================================== */
+
+/* Layout */
+.contact-container {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  padding: 40px 0;
+}
+
+/* Two columns */
+.contactus-img,
+.form-wrapper {
+  flex: 1;
+}
+
+/* Image */
+.contactus-img img {
+  width: 80%;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+/* Image hover zoom */
+.contactus-img img:hover {
+  transform: scale(1.05);
+}
+
+/* Form width */
+.form-wrapper {
+  max-width: 500px;
+}
+
+/* Input styling */
+.form-control {
+  border-radius: 8px;
+}
+
+/* Labels */
+.form-label {
+  font-weight: 600;
+}
+
+/* Checkbox */
+.form-check {
+  margin-left: 15px;
+}
+
+.form-check-input {
+  accent-color: #5a3e2b;
+}
+
+/* =====================================
+   ✅ ABOUT PAGE (
+===================================== */
+
+#aboutus {
+  padding: 50px 0;
+}
+
+/* Image */
+.aboutus-img img {
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Text */
+.aboutus-content h2 {
+  color: #5a3e2b;
+  margin-bottom: 15px;
+}
+
+.aboutus-content p {
+  line-height: 1.6;
+  color: #333;
+}
+
+/* =====================================
+   ✅ FOOTER
+===================================== */
+footer {
+  background-color: #2c1404 !important;
+  color: white;
+  text-align: center;
+}
+
+/* Link hover */
+footer a:hover {
+  color: #ffc107;
+}
+
+/* =====================================
+   ✅ RESPONSIVE DESIGN (Mobile)
+===================================== */
+@media (max-width: 768px) {
+  /* Contact page stack */
+  .contact-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .form-wrapper {
+    max-width: 100%;
+  }
+
+  /* About page */
+  #aboutus {
+    text-align: center;
+  }
+
+  .aboutus-img img {
+    margin-bottom: 20px;
+  }
+
+  /* Menu images smaller */
+  .menu-card img {
+    height: 180px;
+  }
+}
+
+/* =====================================
+   ✅ OPENING HOURS STYLING
+===================================== */
+#aboutus table {
+  margin-top: 15px;
+  background-color: white;
+}
+
+#aboutus td {
+  padding: 10px;
+}
+
+/* =====================================
+   ✅ Increasing the size of footer heading using  paragrpah element 
+   ===================================== */
+.footer-heading {
+  font-size: 20px;
+  /* text-decoration: underline; */
+  font-weight: bold;
+}
+.footer-link {
+  font-size: 20px;
+  /* text-decoration: underline; */
+  font-weight: bold;
+}
+.footer-contact {
+  font-size: 20px;
+  /* text-decoration: underline; */
+  font-weight: bold;
+}
