@@ -45,7 +45,7 @@ body {
   height: 60vh;
 
   /* ✅ ONE BACKGROUND IMAGE */
-  background-image: url("../image/hero9.jpg");
+  background-image: url("../image/hero9.webp");
 
   background-size: cover; /* Fill are nicely */
   background-position: center; /* Center image */
